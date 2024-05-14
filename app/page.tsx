@@ -1,5 +1,6 @@
 import VideoPlayer from "./components/video-player/video-player";
 import CardAccordion from "./components/card-accordion/card-accordion";
+import DonationCard from "./components/donation-card/donation-card";
 
 export default function Home() {
   return (
@@ -62,6 +63,7 @@ Driven by a commitment to excellence and a passion for preserving gaming heritag
 Join the Wolfman on this journey through the annals of gaming history, as he continues to tinker, repair, and inspire. Together, let's celebrate the magic of retro gaming and keep the spirit of the Wolfman alive.`} />
           </div>
         </div>
+        <DonationCard title={""} image={""} imageAlt={""} visibleText={""} />
       </div>
     </main >
   );
