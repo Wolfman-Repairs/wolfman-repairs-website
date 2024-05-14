@@ -10,7 +10,7 @@ interface IProps {
 
 export default function DonationCard({ title, image, imageAlt, visibleText, hiddenText }: IProps) {
     return (
-        <div className="w-full flex rounded overflow-hidden shadow-md shadow-black/50">
+        <div className="flex rounded overflow-hidden shadow-md shadow-black/50">
             <div className="flex bg-neutral-800">
                 <img className="object-cover w-full" src="/test-website-2/circuit-board.svg" alt={imageAlt} />
             </div>
