@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 const links = [
-    { name: 'Videos', href: '/' },
-    { name: 'About', href: '/' },
+    { name: 'Videos', href: '/#video' },
+    { name: 'About', href: '/#about' },
 ];
 
 export default function NavBar() {
