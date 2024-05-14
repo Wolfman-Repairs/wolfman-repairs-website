@@ -1,4 +1,5 @@
 import Image from "next/image";
+import VideoPlayer from "./components/video-player/video-player";
 
 export default function Home() {
   return (
@@ -21,14 +22,7 @@ export default function Home() {
       <div className="m-4">
         <div className="">
           <h2 className="text-4xl text-center my-4">Check out the latest video!!</h2>
-          <div className="relative pt-[56.25%]">
-            <iframe className="absolute inset-0 w-full h-full border-0"
-              src="https://www.youtube-nocookie.com/embed?listType=playlist&list=UULFUit0DLfO1RQ1LjxVW1rT6Q"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen>
-            </iframe>
-          </div>
+          <VideoPlayer playlist="UULFUit0DLfO1RQ1LjxVW1rT6Q" />
         </div>
         <div className="">
           <h2 className="text-4xl text-center my-8">About Wolfman Repairs</h2>
