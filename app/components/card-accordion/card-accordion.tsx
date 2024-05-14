@@ -15,8 +15,8 @@ export default function CardAccordion({ title, image, imageAlt, visibleText, hid
         setActive(!expanded)
     }
     return (
-        <div className="md:w-96 flex-1 md:flex-initial h-full rounded overflow-hidden shadow-md shadow-black/50 my-4">
-            <img className="w-full h-44 bg-black dark:bg-neutral-900" src={image} alt={imageAlt} />
+        <div className="md:w-96 flex-1 md:flex-initial h-full rounded overflow-hidden shadow-md dark:bg-neutral-800 shadow-black/50 my-4">
+            <img className="w-full h-44 bg-black dark:bg-neutral-800" src={image} alt={imageAlt} />
             <div className="p-4 mt-4 ">
                 <div className="font-bold text-xl text-center">{title}</div>
                 <div className="text-base whitespace-pre-line text-center">
