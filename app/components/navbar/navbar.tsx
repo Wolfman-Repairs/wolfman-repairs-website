@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const links = [
+    { name: 'eBay', href: 'https://www.ebay.com/usr/wolfmanrepairs', target: '_blank' },
+    { name: 'Etsy', href: 'https://www.etsy.com/shop/WolfmanRepairs', target: '_blank' },
     { name: 'Videos', href: '/#video' },
     { name: 'About', href: '/#about' },
 ];
@@ -17,7 +19,7 @@ export default function NavBar() {
                     <div className="text-sm flex-grow">
                         {links.map((link) => {
                             return (
-                                <Link href={link.href} key={link.name}
+                                <Link href={link.href} key={link.name} target={link.target}
                                     className="inline-block text-gray-200 hover:text-white mr-4">{link.name}</Link>
                             );
                         })}
