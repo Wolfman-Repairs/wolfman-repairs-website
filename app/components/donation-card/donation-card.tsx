@@ -21,7 +21,7 @@ export default function DonationCard({ title, image, imageAlt, visibleText, hidd
                 </div>
 
                 <form className="text-center" action="https://www.paypal.com/donate" method="post" target="_blank">
-                    <input type="hidden" name="hosted_button_id" value="INSERT_ID_HERE" />
+                    <input type="hidden" name="hosted_button_id" value="984335KR9EFTE" />
                     <input className="border-0" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
                 </form>
             </div>
