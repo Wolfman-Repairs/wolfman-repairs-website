@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       {/* TODO: Make attributions page for https://heropatterns.com/ */}
       <body className={inter.className + "flex text-black dark:text-white bg-green-700 dark:bg-green-900 bg-repeat bg-[url('/test-website-2/circuit-board.svg')]"}>
-        <div className="lg:container mx-auto bg-white dark:bg-neutral-900 shadow-lg shadow-black">
+        <div className="md:container mx-auto bg-white dark:bg-neutral-900 shadow-lg shadow-black">
           <NavBar />
           {children}
           <Footer />

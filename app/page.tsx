@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </div>
       <div className="m-4">
-        <div className="" id="video">
+        <div className="md:px-10" id="video">
           <h2 className="text-4xl text-center my-4">Check out the latest video!!</h2>
           <VideoPlayer playlist="UULFUit0DLfO1RQ1LjxVW1rT6Q" />
         </div>
