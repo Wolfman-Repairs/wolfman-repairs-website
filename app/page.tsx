@@ -9,9 +9,9 @@ export default function Home() {
         <div className="flex flex-col gap-3">
           <div className="m-12">
             <img
-              className="object-contain w-full h-auto max-h-60 fill-white"
-              src="/test-website-2/next.svg"
-              alt="Next.js Logo"
+              className="object-contain w-full h-auto max-h-80 fill-white"
+              src="/test-website-2/logo.png"
+              alt="Wolfman Repairs Logo"
             />
           </div>
 
