@@ -5,8 +5,8 @@ import { useState } from "react";
 const links = [
     { name: 'eBay', href: 'https://www.ebay.com/usr/wolfmanrepairs', target: '_blank' },
     { name: 'Etsy', href: 'https://www.etsy.com/shop/WolfmanRepairs', target: '_blank' },
-    { name: 'Videos', href: '/#video' },
-    { name: 'About', href: '/#about' },
+    { name: 'Videos', href: '#video' },
+    { name: 'About', href: '#about' },
 ];
 
 export default function NavBar() {
@@ -25,8 +25,9 @@ export default function NavBar() {
                     <div className="text-lg flex-grow font-md">
                         {links.map((link) => {
                             return (
-                                <Link href={link.href} key={link.name} target={link.target}
-                                    className="inline-block p-1 rounded text-gray-200 hover:text-white hover:bg-neutral-700 ml-2">{link.name}</Link>
+                                /* TODO: Set this as a Link after changing base path to "" */
+                                <a href={link.href} key={link.name} target={link.target}
+                                    className="inline-block p-1 rounded text-gray-200 hover:text-white hover:bg-neutral-700 ml-2">{link.name}</a>
                             );
                         })}
                     </div>
@@ -40,8 +41,9 @@ export default function NavBar() {
                     <div className="flex flex-col font-semibold rounded-b-lg rounded-t-lg bg-neutral-800">
                         {links.map((link) => {
                             return (
-                                <Link href={link.href} key={link.name} target={link.target} onClick={toggleExpanded}
-                                    className="block p-2 rounded-b-lg rounded-t-lg text-gray-200 hover:bg-neutral-700 hover:text-white">{link.name}</Link>
+                                /* TODO: Set this as a Link after changing base path to "" */
+                                <a href={link.href} key={link.name} target={link.target} onClick={toggleExpanded}
+                                    className="block p-2 rounded-b-lg rounded-t-lg text-gray-200 hover:bg-neutral-700 hover:text-white">{link.name}</a>
                             );
                         })}
                     </div>
