@@ -26,7 +26,7 @@ export default function Home() {
           <VideoPlayer playlist="UULFUit0DLfO1RQ1LjxVW1rT6Q" />
         </div>
         <div className="flex flex-col xl:flex-row xl:space-x-6" id="about">
-          <div className="xl:basis-0 xl:grow xl:min-w-0">
+          <div className="xl:flex-1">
             <ContentCard
               title="About Wolfman Repairs"
               image="/test-website-2/nes-motherboard.png"
@@ -48,7 +48,7 @@ As we look to the future, our vision is clear: to continue expanding our reach, 
 Thank you for being a part of the Wolfman Repairs Pack.`}
             />
           </div>
-          <div className="xl:basis-0 xl:grow xl:min-w-0 mb-3">
+          <div className="xl:flex-1 mb-3">
             <ContentCard
               title="About Wolfman"
               image="/test-website-2/n64-chip.png"
