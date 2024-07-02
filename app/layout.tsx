@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html className="scroll-smooth" lang="en">
       {/* TODO: Make attributions page for https://heropatterns.com/ */}
       <body className={inter.className + "flex text-white bg-green-900 bg-repeat bg-[url('/test-website-2/circuit-board.svg')]"}>
         <div className="md:container mx-auto bg-neutral-900 shadow-lg shadow-black">
