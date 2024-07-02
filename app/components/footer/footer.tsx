@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="p-4 bg-neutral-900 text-white w-full">
-            <hr className="my-6 border-neutral-700" />
+            <hr className="mb-6 border-neutral-700" />
             <div className="flex items-center justify-between">
                 <span className="text-sm text-center text-gray-400">© 2024 Wolfman Repairs™. All Rights Reserved.</span>
                 <div className="flex space-x-2 justify-center text-gray-500">
