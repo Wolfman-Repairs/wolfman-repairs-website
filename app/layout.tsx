@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Wolfman Repairs",
   description: "Reviving Retro, One Console at a Time!!",
+  openGraph: {
+    images: ["/wolfman-repairs-website/logo.png"],
+  }
 };
 
 export default function RootLayout({
