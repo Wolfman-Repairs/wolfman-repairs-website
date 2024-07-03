@@ -10,7 +10,7 @@ export default function Home() {
           <div className="m-12">
             <img
               className="object-contain w-full h-auto max-h-80 fill-white"
-              src="/test-website-2/logo.png"
+              src="/wolfman-repairs-website/logo.png"
               alt="Wolfman Repairs Logo"
             />
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
           <div className="xl:flex-1">
             <ContentCard
               title="About Wolfman Repairs"
-              image="/test-website-2/nes-motherboard.png"
+              image="/wolfman-repairs-website/nes-motherboard.png"
               imageAlt="nes motherboard"
               text={`Welcome to Wolfman Repairs, where passion meets craftsmanship. Founded in late 2022, Wolfman Repairs was born out of a love for retro video games and a desire to breathe new life into classic consoles.
 
@@ -51,7 +51,7 @@ Thank you for being a part of the Wolfman Repairs Pack.`}
           <div className="xl:flex-1 mb-3">
             <ContentCard
               title="About Wolfman"
-              image="/test-website-2/n64-chip.png"
+              image="/wolfman-repairs-website/n64-chip.png"
               imageAlt="n64 chip"
               text={`The driving force behind Wolfman Repairs: the one-man show known simply as The Wolfman. With a passion for retro gaming and a knack for fixing things, the Wolfman is the heart and soul of our operation.
 

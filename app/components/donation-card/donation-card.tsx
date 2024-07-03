@@ -2,7 +2,7 @@ export default function DonationCard() {
     return (
         <div className="flex rounded overflow-hidden shadow-md shadow-black/50">
             <div className="flex bg-neutral-800">
-                <img className="object-cover w-full" src="/test-website-2/circuit-board.svg" alt="circuit board" />
+                <img className="object-cover w-full" src="/wolfman-repairs-website/circuit-board.svg" alt="circuit board" />
             </div>
             <div className="bg-white p-4">
                 <div className="mb-4">

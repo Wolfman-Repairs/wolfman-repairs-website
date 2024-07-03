@@ -13,7 +13,7 @@ const nextConfig = {
      * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
      */
     /* TODO: Set this to "" after changing the domain */
-    basePath: "/test-website-2",
+    basePath: "/wolfman-repairs-website",
 
     /**
      * Disable server-based image optimization. Next.js does not support
