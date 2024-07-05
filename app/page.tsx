@@ -12,11 +12,11 @@ export default function Home() {
           imageAlt="Wolfman Repairs Logo"
           text="Reviving retro, one console at a time!"
         />
-        <div className="mb-3" id="video">
-          <h2 className="text-4xl text-center my-4">Check out the latest video!!</h2>
+        <div className="my-3 scroll-mt-20" id="video">
+          <h2 className="sm:text-xl lg:text-3xl text-center my-4">Check out the latest video</h2>
           <VideoPlayer playlist="UULFUit0DLfO1RQ1LjxVW1rT6Q" />
         </div>
-        <div className="flex flex-col xl:flex-row xl:space-x-6" id="about">
+        <div className="flex flex-col xl:flex-row xl:space-x-6 scroll-mt-16" id="about">
           <div className="xl:flex-1">
             <ContentCard
               title="About Wolfman Repairs"
