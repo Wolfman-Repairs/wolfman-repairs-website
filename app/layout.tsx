@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Kode_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
+import HeroBanner from "./components/hero-banner/hero-banner";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Kode_Mono({
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Wolfman Repairs",
@@ -20,9 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="scroll-smooth" lang="en">
+    <html className={font.className + " scroll-smooth"} lang="en">
       {/* TODO: Make attributions page for https://heropatterns.com/ */}
-      <body className={inter.className + "flex text-white bg-green-900 bg-repeat bg-[url('/wolfman-repairs-website/circuit-board.svg')]"}>
+      <body className="flex text-white bg-green-900 bg-repeat bg-[url('/wolfman-repairs-website/circuit-board.svg')]">
         <div className="md:container mx-auto bg-neutral-900 shadow-lg shadow-black">
           <NavBar />
           {children}
