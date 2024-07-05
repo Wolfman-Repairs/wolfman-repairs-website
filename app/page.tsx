@@ -1,26 +1,17 @@
 import VideoPlayer from "./components/video-player/video-player";
 import DonationCard from "./components/donation-card/donation-card";
 import ContentCard from "./components/content-card/content-card";
+import HeroBanner from "./components/hero-banner/hero-banner";
 
 export default function Home() {
   return (
     <main className="flex-1 flex-col items-center justify-between">
-      <div className="bg-gradient-to-b from-gray-500 to-neutral-900 pb-6">
-        <div className="flex flex-col gap-3">
-          <div className="m-12">
-            <img
-              className="object-contain w-full h-auto max-h-80 fill-white"
-              src="/wolfman-repairs-website/logo.png"
-              alt="Wolfman Repairs Logo"
-            />
-          </div>
-
-          <p className="text-white text-4xl font-bold text-center">
-            Reviving Retro, One Console At a Time!!
-          </p>
-        </div>
-      </div>
       <div className="m-2 sm:m-4 md:m-8">
+        <HeroBanner
+          image="/wolfman-repairs-website/logo.png"
+          imageAlt="Wolfman Repairs Logo"
+          text="Reviving retro, one console at a time!"
+        />
         <div className="mb-3" id="video">
           <h2 className="text-4xl text-center my-4">Check out the latest video!!</h2>
           <VideoPlayer playlist="UULFUit0DLfO1RQ1LjxVW1rT6Q" />
