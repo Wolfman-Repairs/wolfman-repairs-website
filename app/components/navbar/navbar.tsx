@@ -15,7 +15,7 @@ export default function NavBar() {
         setActive(!expanded)
     }
     return (
-        <header className="sticky top-0 z-10 p-4 bg-neutral-900 w-full">
+        <header className="sticky top-0 z-50 p-4 bg-neutral-900 w-full">
             <nav className="flex items-center justify-between flex-wrap min-h-[40px]">
                 <div className="flex items-center flex-grow text-white mr-6">
                     <img
