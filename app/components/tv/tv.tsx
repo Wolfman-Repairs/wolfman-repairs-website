@@ -37,7 +37,7 @@ export default function TV({ playlist }: IProps) {
                 alt="Wolfman Repairs Youtube TV Frame"
             />
             <div className="absolute top-[6%] left-[3.7%] w-[78.5%] border-2 md:border-4 border-solid border-black before:block before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-10 before:pointer-events-none before:bg-[size:100%_2px,3px_100%] before:bg-gradient-crt ">
-                <VideoPlayer playlist={playlistUrl} />
+                <VideoPlayer playlist={powerClicked ? playlistUrl : ""} />
             </div>
             <div className="absolute top-[9.9%] left-[87.1%] w-[7.8%] h-[14%]">
                 <div className="relative cursor-pointer w-full h-full rounded-full">
