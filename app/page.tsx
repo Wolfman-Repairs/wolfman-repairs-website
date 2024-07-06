@@ -1,9 +1,16 @@
-import VideoPlayer from "./components/video-player/video-player";
-import DonationCard from "./components/donation-card/donation-card";
 import ContentCard from "./components/content-card/content-card";
+import DonationCard from "./components/donation-card/donation-card";
 import HeroBanner from "./components/hero-banner/hero-banner";
+import TV from "./components/tv/tv";
 
 export default function Home() {
+  const youTubeBaseUrl = "https://www.youtube-nocookie.com/embed?listType=playlist&list="
+  const youTubeListId = "UULFUit0DLfO1RQ1LjxVW1rT6Q";
+  const youTubePlaylist = [];
+  for (let i = 1; i <= 12; i++) {
+    youTubePlaylist.push(youTubeBaseUrl + youTubeListId + "&index=" + i)
+  }
+
   return (
     <main className="flex-1 flex-col items-center justify-between">
       <div className="m-2 sm:m-4 md:m-8">
@@ -14,7 +21,7 @@ export default function Home() {
         />
         <div className="my-3 scroll-mt-20" id="video">
           <h2 className="sm:text-xl lg:text-3xl text-center my-4">Check out the latest video</h2>
-          <VideoPlayer playlist="UULFUit0DLfO1RQ1LjxVW1rT6Q" />
+          <TV playlist={youTubePlaylist} />
         </div>
         <section className="flex flex-col xl:flex-row xl:space-x-6 scroll-mt-16" id="about">
           <div className="xl:flex-1">
