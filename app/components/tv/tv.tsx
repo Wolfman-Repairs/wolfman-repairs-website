@@ -45,8 +45,9 @@ export default function TV({ playlist }: IProps) {
                         onClick={channelChanged} />
                     <div className="relative w-full h-full transition-transform"
                         style={{ transform: `rotate(${channelRotation}deg)` }}>
-                        <svg className="w-full h-full fill-neutral-900" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 4 20">
+                        <svg className="w-full h-full fill-neutral-900" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 20">
                             <path d="M2.156.001C1.14-.045 0 1.34 0 2.532v15.132c0 1.148 1.179 2.38 2.156 2.335C3.059 19.957 4 18.726 4 17.664V2.532C4 1.422 3.1.044 2.156.002z" />
+                            <path fill="#fff" d="M2.107.8C1.343.773.59 2.52.59 2.52l2.844.012S2.834.825 2.107.8z" />
                         </svg>
                     </div>
                 </div>
