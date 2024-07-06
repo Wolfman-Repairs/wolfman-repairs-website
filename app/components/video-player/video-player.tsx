@@ -8,16 +8,27 @@ interface IProps {
 }
 
 export default function VideoPlayer({ playlist, index }: IProps) {
-    const [play] = useSound("/wolfman-repairs-website/sounds/switch-click.wav")
+    const [play] = useSound("/wolfman-repairs-website/sounds/switch-click.wav");
 
-    const [crtClicked, setCrtClicked] = useState(true);
-    const toggleCrtClicked = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const [powerClicked, setPowerClicked] = useState(true);
+    const togglePowerClicked = (e: React.ChangeEvent<HTMLInputElement>) => {
         play();
-        setCrtClicked(e.target.checked);
+        setPowerClicked(e.target.checked);
     }
 
-    var playlistUrl = "https://www.youtube-nocookie.com/embed?listType=playlist&list=" + playlist
-    if (index) playlistUrl += "&index=" + index
+    const youtubeUrl = "https://www.youtube-nocookie.com/embed?listType=playlist&list=";
+    var startingPlaylist = youtubeUrl + playlist;
+    if (index) startingPlaylist += "&index=" + index
+    const [playlistUrl, setPlaylistUrl] = useState(startingPlaylist);
+
+    const [channelRotation, setChannelChanged] = useState(0);
+    const channelChanged = () => {
+        play();
+        var rotation = channelRotation + 30;
+        var channelIndex = (rotation % 360 / 30) + 1;
+        setPlaylistUrl(youtubeUrl + playlist + "&index=" + channelIndex);
+        setChannelChanged(rotation);
+    }
 
     return (
         <section className="relative">
@@ -26,27 +37,41 @@ export default function VideoPlayer({ playlist, index }: IProps) {
                 src="/wolfman-repairs-website/retro_tv.svg"
                 alt="Wolfman Repairs Youtube TV Frame"
             />
-            <div className={"absolute top-[6%] left-[3.7%] w-[78.5%] border-2 md:border-4 border-solid border-black before:block before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-10 before:pointer-events-none before:bg-[size:100%_2px,3px_100%] before:bg-gradient-crt " + (crtClicked ? "" : "hidden")}>
+            <div className={"absolute top-[6%] left-[3.7%] w-[78.5%] border-2 md:border-4 border-solid border-black before:block before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-10 before:pointer-events-none before:bg-[size:100%_2px,3px_100%] before:bg-gradient-crt "}>
                 <div className="relative pt-[56.25%]">
                     <iframe className="absolute inset-0 w-full h-full border-0"
-                        src={playlistUrl}
+                        id="tv-iframe"
+                        src={powerClicked ? playlistUrl : ""}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen>
+                        allowFullScreen
+                        loading="lazy">
                     </iframe>
+                </div>
+            </div>
+            <div className="absolute top-[9.9%] left-[87.1%] w-[7.8%] h-[14%]">
+                <div className="relative cursor-pointer w-full h-full rounded-full">
+                    <button className="appearance-none absolute z-10 w-full h-full opacity-0 cursor-pointer"
+                        onClick={channelChanged} />
+                    <div className="relative w-full h-full transition-transform"
+                        style={{ transform: `rotate(${channelRotation}deg)` }}>
+                        <svg className="w-full h-full fill-neutral-900" xmlns="http://www.w3.org/2000/svg" xmlSpace="preserve" viewBox="0 0 4 20">
+                            <path d="M2.156.001C1.14-.045 0 1.34 0 2.532v15.132c0 1.148 1.179 2.38 2.156 2.335C3.059 19.957 4 18.726 4 17.664V2.532C4 1.422 3.1.044 2.156.002z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
             <div className="absolute top-[52.5%] left-[87.1%] w-[7.8%] h-[32%]">
                 <div className="relative overflow-hidden cursor-pointer w-full h-full border-2 md:border-4 border-solid border-black">
                     <input className="appearance-none absolute z-10 w-full h-full opacity-0 cursor-pointer"
-                        type="checkbox" checked={crtClicked} onChange={toggleCrtClicked} />
-                    <div className={"w-full h-full py-1 inline-flex transition-colors shadow-[inset_0_0_0.5em_rgba(0,0,0,0.6)] " + (crtClicked ? "bg-red-500" : "bg-neutral-600")}>
-                        <div className={"w-full h-full flex flex-col justify-evenly relative items-center sm:rounded-md transition-transform bg-gradient-to-b from-[49%] to-[51%] border-y border-neutral-800 border-opacity-10 " + (crtClicked ? "-translate-y-[10%]  from-neutral-700  to-neutral-500" : "translate-y-[10%] from-neutral-500 to-neutral-700")}>
+                        type="checkbox" checked={powerClicked} onChange={togglePowerClicked} />
+                    <div className={"w-full h-full py-1 inline-flex transition-colors shadow-[inset_0_0_0.5em_rgba(0,0,0,0.6)] " + (powerClicked ? "bg-red-500" : "bg-neutral-600")}>
+                        <div className={"w-full h-full flex flex-col justify-evenly relative items-center sm:rounded-md transition-transform bg-gradient-to-b from-[49%] to-[51%] border-y border-neutral-800 border-opacity-10 " + (powerClicked ? "-translate-y-[10%]  from-neutral-700  to-neutral-500" : "translate-y-[10%] from-neutral-500 to-neutral-700")}>
                             <svg className="w-[70%] h-[70%]" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                <rect className={crtClicked ? "fill-white" : "fill-neutral-400"} x="7" y="3" width="2" height="12" rx="1" />
+                                <rect className={powerClicked ? "fill-white" : "fill-neutral-400"} x="7" y="3" width="2" height="12" rx="1" />
                             </svg>
                             <svg className="w-[60%] h-[60%]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-                                <path className={crtClicked ? "fill-neutral-400" : "fill-white"} d="M8 0C3.594 0 0 3.594 0 8c0 4.406 3.594 8 8 8 4.406 0 8-3.594 8-8 0-4.406-3.594-8-8-8Zm0 2.018A5.967 5.967 0 0 1 13.982 8 5.967 5.967 0 0 1 8 13.982 5.967 5.967 0 0 1 2.018 8 5.967 5.967 0 0 1 8 2.018Z" />
+                                <path className={powerClicked ? "fill-neutral-400" : "fill-white"} d="M8 0C3.594 0 0 3.594 0 8c0 4.406 3.594 8 8 8 4.406 0 8-3.594 8-8 0-4.406-3.594-8-8-8Zm0 2.018A5.967 5.967 0 0 1 13.982 8 5.967 5.967 0 0 1 8 13.982 5.967 5.967 0 0 1 2.018 8 5.967 5.967 0 0 1 8 2.018Z" />
                             </svg>
                         </div>
                     </div>
