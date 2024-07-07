@@ -6,7 +6,7 @@ interface IProps {
     url?: string
 }
 
-export default function GalleryCard({ title, image, imageAlt, text, url }: IProps) {
+export default function ShopCard({ title, image, imageAlt, text, url }: IProps) {
     return (
         <div style={{ '--image-url': `url(${image})` } as React.CSSProperties}
             className={"flex w-full rounded shadow-md shadow-black/50 bg-neutral-800 bg-contain bg-no-repeat bg-[95%_50%] bg-[image:var(--image-url)] hover:scale-105 transition-transform"}>

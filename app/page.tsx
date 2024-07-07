@@ -1,6 +1,6 @@
 import ContentCard from "./components/content-card/content-card";
 import DonationCard from "./components/donation-card/donation-card";
-import GalleryCard from "./components/gallery-card/gallery-card";
+import ShopCard from "./components/shop-card/shop-card";
 import HeroBanner from "./components/hero-banner/hero-banner";
 import TV from "./components/tv/tv";
 
@@ -42,14 +42,14 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
         </section>
         <section className="my-8">
           <div className="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-evenly items-center lg:space-x-8 my-8">
-            <GalleryCard
+            <ShopCard
               title="eBay"
               image="/wolfman-repairs-website/controller.svg"
               imageAlt="nes motherboard"
               text={`Support us on eBay`}
               url="https://www.ebay.com/usr/wolfmanrepairs"
             />
-            <GalleryCard
+            <ShopCard
               title="Etsy"
               image="/wolfman-repairs-website/shirt.svg"
               imageAlt="nes motherboard"
