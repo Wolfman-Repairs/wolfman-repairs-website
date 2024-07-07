@@ -6,7 +6,7 @@ interface IProps {
 
 export default function HeroBanner({ image, imageAlt, text }: IProps) {
     return (
-        <section className="bg-neutral-900 text-white w-full p-2">
+        <section className="bg-neutral-900 text-white w-full">
             <div className="flex flex-col gap-3">
                 <img
                     className="object-contain w-full h-auto max-h-96"
@@ -17,7 +17,7 @@ export default function HeroBanner({ image, imageAlt, text }: IProps) {
                     {text}
                 </p>
             </div>
-            <hr className="mt-6 border-neutral-700" />
+            <hr className="mt-8 border-neutral-700" />
         </section>
     );
 }
