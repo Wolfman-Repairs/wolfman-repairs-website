@@ -1,5 +1,6 @@
 import ContentCard from "./components/content-card/content-card";
 import DonationCard from "./components/donation-card/donation-card";
+import GalleryCard from "./components/gallery-card/gallery-card";
 import HeroBanner from "./components/hero-banner/hero-banner";
 import TV from "./components/tv/tv";
 
@@ -19,31 +20,45 @@ export default function Home() {
           imageAlt="Wolfman Repairs Logo"
           text="Reviving retro, one console at a time!"
         />
-        <div className="my-3 scroll-mt-20" id="video">
-          <h2 className="sm:text-xl lg:text-3xl text-center my-4">Check out the latest video</h2>
+        <section className="my-8 scroll-mt-20" id="video">
+          <h2 className="sm:text-xl lg:text-3xl text-center mb-4">Check out the latest video</h2>
           <TV playlist={youTubePlaylist} />
-        </div>
-        <section className="flex flex-col xl:flex-row xl:space-x-6 scroll-mt-16" id="about">
-          <div className="xl:flex-1">
-            <ContentCard
-              title="About Wolfman Repairs"
-              image="/wolfman-repairs-website/nes-motherboard.png"
-              imageAlt="nes motherboard"
-              text={`Welcome to Wolfman Repairs, where passion meets craftsmanship. Founded in late 2022, Wolfman Repairs was born out of a love for retro video games and a desire to breathe new life into classic consoles.`}
-            />
-          </div>
-          <div className="xl:flex-1 mb-3">
-            <ContentCard
-              title="About Wolfman"
-              image="/wolfman-repairs-website/n64-chip.png"
-              imageAlt="n64 chip"
-              text={`The driving force behind Wolfman Repairs: the one-man show known simply as The Wolfman. With a passion for retro gaming and a knack for fixing things, the Wolfman is the heart and soul of our operation.
+        </section>
+        <section className="flex flex-col space-y-8 xl:flex-row xl:space-y-0 xl:space-x-8 scroll-mt-16 my-8" id="about">
+          <ContentCard
+            title="About Wolfman Repairs"
+            image="/wolfman-repairs-website/nes-motherboard.png"
+            imageAlt="nes motherboard"
+            text={`Welcome to Wolfman Repairs, where passion meets craftsmanship. Founded in late 2022, Wolfman Repairs was born out of a love for retro video games and a desire to breathe new life into classic consoles.`}
+          />
+          <ContentCard
+            title="About Wolfman"
+            image="/wolfman-repairs-website/n64-chip.png"
+            imageAlt="n64 chip"
+            text={`The driving force behind Wolfman Repairs: the one-man show known simply as The Wolfman. With a passion for retro gaming and a knack for fixing things, the Wolfman is the heart and soul of our operation.
 
 Armed with years of experience and an insatiable curiosity, the Wolfman dives headfirst into the world of vintage gaming, armed with soldering iron in hand and a determination to conquer any challenge that comes his way.`}
+          />
+        </section>
+        <section className="my-8">
+          <div className="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-evenly items-center lg:space-x-8 my-8">
+            <GalleryCard
+              title="eBay"
+              image="/wolfman-repairs-website/controller.svg"
+              imageAlt="nes motherboard"
+              text={`Support us on eBay`}
+              url="https://www.ebay.com/usr/wolfmanrepairs"
+            />
+            <GalleryCard
+              title="Etsy"
+              image="/wolfman-repairs-website/shirt.svg"
+              imageAlt="nes motherboard"
+              text={`Support us on Etsy`}
+              url="https://www.etsy.com/shop/WolfmanRepairs"
             />
           </div>
+          <DonationCard />
         </section>
-        <DonationCard />
       </div>
     </main >
   );
