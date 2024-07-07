@@ -9,7 +9,7 @@ interface IProps {
 export default function ShopCard({ title, image, imageAlt, text, url }: IProps) {
     return (
         <div style={{ '--image-url': `url(${image})` } as React.CSSProperties}
-            className={"flex w-full rounded-full overflow-hidden shadow-md shadow-black/50 bg-neutral-800 bg-contain bg-no-repeat bg-[95%_50%] bg-[image:var(--image-url)] hover:scale-105 transition-transform"}>
+            className={"flex w-full rounded-full overflow-hidden shadow-md shadow-black/50 bg-green-900 bg-contain bg-no-repeat bg-[95%_50%] bg-[image:var(--image-url)] hover:bg-green-700 hover:scale-105 transition-transform"}>
             <a href={url} target="_blank"
                 className="w-full flex flex-col justify-end">
                 <div className="text-white text-left m-8">
