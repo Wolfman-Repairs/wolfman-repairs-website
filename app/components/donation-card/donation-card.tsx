@@ -1,6 +1,6 @@
 export default function DonationCard() {
     return (
-        <form className="flex rounded overflow-hidden shadow-md shadow-black/50 hover:scale-105 transition-transform"
+        <form className="flex rounded-3xl overflow-hidden shadow-md shadow-black/50 hover:scale-105 transition-transform"
             action="https://www.paypal.com/donate" method="post" target="_blank">
             <input type="hidden" name="hosted_button_id" value="984335KR9EFTE" />
             <button className="h-full w-full bg-neutral-800" type="submit">
