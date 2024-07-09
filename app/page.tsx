@@ -4,6 +4,7 @@ import ShopCard from "./components/shop-card/shop-card";
 import HeroBanner from "./components/hero-banner/hero-banner";
 import TV from "./components/tv/tv";
 import ContactCard from "./components/contact-card/contact-card";
+import MailingCard from "./components/mailing-card/mailing-card";
 
 export default function Home() {
   const youTubeBaseUrl = "https://www.youtube-nocookie.com/embed?listType=playlist&list="
@@ -68,6 +69,15 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
           <DonationCard />
         </section>
         <section className="scroll-mt-72 flex flex-col lg:flex-row gap-8 my-8" id="contact">
+          <MailingCard
+            title="Send Wolfman a package!"
+            image="/wolfman-repairs-website/package.svg"
+            imageAlt="screwdriver"
+            text={`WOLFMAN REPAIRS
+              11250 Old St. Augustine Rd
+              Suite 15-205
+              Jacksonville Fl, 32257`}
+          />
           <ContactCard />
         </section>
       </div>
