@@ -1,14 +1,9 @@
 "use client"
 import { useState } from "react"
 import { BaseSyntheticEvent } from "react";
-// import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export default function ContactCard() {
     const [result, setResult] = useState("");
-
-    // const onHCaptchaChange = (token) => {
-    //     setValue("h-captcha-response", token);
-    // };
 
     async function onSubmit(event: BaseSyntheticEvent) {
         event.preventDefault();
@@ -72,12 +67,6 @@ export default function ContactCard() {
                                 className="w-full p-2 border rounded-md bg-neutral-700 placeholder-green-500 placeholder-opacity-50 border-neutral-600 focus:outline-none focus:ring focus:ring-green-900 focus:border-green-800 focus:bg-neutral-900"
                             />
                         </div>
-                        {/* <HCaptcha
-                            sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
-                            reCaptchaCompat={false}
-                            onVerify={onHCaptchaChange}
-                            theme="dark"
-                        /> */}
                         <div className="">
                             <button type="submit" className="w-full p-4 shadow-md shadow-black/50 bg-green-900 rounded-full focus:bg-green-800 focus:outline-none hover:hover:bg-green-700">
                                 Send Message
