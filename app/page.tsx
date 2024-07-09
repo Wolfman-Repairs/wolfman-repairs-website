@@ -57,6 +57,13 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
               text=""
               url="https://www.etsy.com/shop/WolfmanRepairs"
             />
+            <ShopCard
+              title="Patreon"
+              image="/wolfman-repairs-website/screwdriver.svg"
+              imageAlt="screwdriver"
+              text=""
+              url=""
+            />
           </div>
           <DonationCard />
         </section>
