@@ -31,7 +31,7 @@ export default function NavBar() {
                             return (
                                 /* TODO: Set this as a Link after changing base path to "" */
                                 <a href={link.href} key={link.name} target={link.target}
-                                    className="inline-block p-1 rounded text-gray-200 hover:text-white hover:bg-neutral-700 ml-2">{link.name}</a>
+                                    className="inline-block p-1 rounded-md text-gray-200 hover:text-white hover:bg-neutral-700 ml-2">{link.name}</a>
                             );
                         })}
                     </div>

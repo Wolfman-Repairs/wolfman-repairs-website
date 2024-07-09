@@ -33,7 +33,7 @@ export default function ContactCard() {
     }
 
     return (
-        <div className="p-2 sm:p-4 md:p-8 rounded shadow-md shadow-black/50 bg-neutral-800 text-white">
+        <div className="p-2 sm:p-4 md:p-8 rounded-md shadow-md shadow-black/50 bg-neutral-800 text-white">
             <div className="text-center mb-4">
                 <h1 className="text-3xl font-semibold ">
                     Contact Wolfman
