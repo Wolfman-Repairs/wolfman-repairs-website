@@ -4,9 +4,11 @@ import { BaseSyntheticEvent } from "react";
 
 export default function ContactCard() {
     const [result, setResult] = useState("");
+    const [loading, setLoading] = useState(false);
 
     async function onSubmit(event: BaseSyntheticEvent) {
         event.preventDefault();
+        setLoading(true);
         setResult("Sending...");
 
         const formData = new FormData(event.target);
@@ -18,6 +20,7 @@ export default function ContactCard() {
         });
 
         const data = await response.json();
+        setLoading(false);
         if (data.success) {
             setResult("Thank you for the message!");
             event.target.reset();
@@ -72,7 +75,15 @@ export default function ContactCard() {
                                 Send Message
                             </button>
                         </div>
-                        <p className="text-base text-center" id="result">{result}</p>
+                        <div className="flex justify-center space-x-4">
+                            <svg className={(loading ? "visible" : "hidden") + " w-6 h-6 animate-spin"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1.587 1.587">
+                                <g fill="none" strokeWidth=".349">
+                                    <circle cx=".794" cy=".794" r=".619" stroke="#171717" />
+                                    <path stroke="#0f0" d="M1.413.794a.62.62 0 0 1-.62.62" />
+                                </g>
+                            </svg>
+                            <p className="text-base text-center" id="result">{result}</p>
+                        </div>
                     </div>
                 </form>
             </div>
