@@ -24,7 +24,9 @@ export default function Home() {
         />
         <section className="my-8 scroll-mt-20" id="video">
           <h2 className="sm:text-xl lg:text-3xl text-center mb-4">Check out the latest video</h2>
-          <TV playlist={youTubePlaylist} />
+          <TV playlist={youTubePlaylist}
+            offImage="/wolfman-repairs-website/logo.png"
+            offImageAlt="Wolfman Repairs Logo" />
         </section>
         <section className="flex flex-col gap-8 xl:flex-row scroll-mt-16 my-8" id="about">
           <ContentCard

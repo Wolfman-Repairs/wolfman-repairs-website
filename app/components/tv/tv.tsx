@@ -5,9 +5,11 @@ import VideoPlayer from "../video-player/video-player";
 
 interface IProps {
     playlist: Array<string>
+    offImage?: string
+    offImageAlt?: string
 }
 
-export default function TV({ playlist }: IProps) {
+export default function TV({ playlist, offImage, offImageAlt }: IProps) {
     const [play] = useSound("/wolfman-repairs-website/sounds/switch-click.wav");
 
     const [powerClicked, setPowerClicked] = useState(true);
@@ -37,7 +39,10 @@ export default function TV({ playlist }: IProps) {
                 alt="Wolfman Repairs Youtube TV Frame"
             />
             <div className="absolute top-[6%] left-[3.7%] w-[78.5%] border-2 md:border-4 border-solid border-black before:block before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-10 before:pointer-events-none before:bg-[size:100%_2px,3px_100%] before:bg-gradient-crt ">
-                <VideoPlayer playlist={powerClicked ? playlistUrl : ""} />
+                <div className={powerClicked ? "" : "hidden"}>
+                    <VideoPlayer playlist={powerClicked ? playlistUrl : ""} />
+                </div>
+                <img className={powerClicked ? "hidden" : "py-[12%] opacity-5"} src={offImage} alt={offImageAlt} />
             </div>
             <div className="absolute top-[9.9%] left-[87.1%] w-[7.8%] h-[14%]">
                 <div className="relative cursor-pointer w-full h-full rounded-full">
@@ -68,6 +73,6 @@ export default function TV({ playlist }: IProps) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
