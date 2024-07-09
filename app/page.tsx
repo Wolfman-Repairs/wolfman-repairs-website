@@ -3,6 +3,7 @@ import DonationCard from "./components/donation-card/donation-card";
 import ShopCard from "./components/shop-card/shop-card";
 import HeroBanner from "./components/hero-banner/hero-banner";
 import TV from "./components/tv/tv";
+import ContactCard from "./components/contact-card/contact-card";
 
 export default function Home() {
   const youTubeBaseUrl = "https://www.youtube-nocookie.com/embed?listType=playlist&list="
@@ -45,20 +46,21 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
             <ShopCard
               title="eBay"
               image="/wolfman-repairs-website/controller.svg"
-              imageAlt="nes motherboard"
-              text={`Support us on eBay`}
+              imageAlt="game controller"
+              text=""
               url="https://www.ebay.com/usr/wolfmanrepairs"
             />
             <ShopCard
               title="Etsy"
               image="/wolfman-repairs-website/shirt.svg"
-              imageAlt="nes motherboard"
-              text={`Support us on Etsy`}
+              imageAlt="t-shirt"
+              text=""
               url="https://www.etsy.com/shop/WolfmanRepairs"
             />
           </div>
           <DonationCard />
         </section>
+        <ContactCard />
       </div>
     </main >
   );
