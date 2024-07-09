@@ -4,7 +4,7 @@ export default function Footer() {
             <hr className="mb-8 border-neutral-700" />
             <div className="flex items-center justify-between">
                 <span className="text-sm text-center ">© 2024 Wolfman Repairs™. All Rights Reserved.</span>
-                <div className="flex space-x-2 justify-center">
+                <div className="flex gap-2 justify-center">
                     <a href="https://www.youtube.com/@wolfmanrepairs" target="_blank"
                         className="hover:text-white w-4 h-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -7 48 48">

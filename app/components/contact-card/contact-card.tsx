@@ -31,11 +31,11 @@ export default function ContactCard() {
     }
 
     return (
-        <div className="p-2 sm:p-4 md:p-8 rounded-md shadow-md shadow-black/50 bg-neutral-800 text-white">
+        <div className="p-2 sm:p-4 md:p-8 w-full rounded-md shadow-md shadow-black/50 bg-neutral-800 text-white">
             <div className="text-center mb-4">
-                <h1 className="text-3xl font-semibold ">
+                <h2 className="text-3xl font-semibold ">
                     Contact Wolfman
-                </h1>
+                </h2>
                 <p className="">
                     Fill out the form below to send Wolfman a message.
                 </p>
@@ -45,7 +45,7 @@ export default function ContactCard() {
                     <input type="hidden" name="subject" value="New Submission from your Website" />
                     <input type="hidden" name="from_name" value="Help Wolfman!"></input>
                     <input className="hidden" type="checkbox" name="botcheck" style={{ display: "none" }} />
-                    <div className="flex flex-col space-y-4">
+                    <div className="flex flex-col gap-4">
                         <div className="">
                             <label htmlFor="name" className="block mb-2 text-sm">Full Name</label>
                             <input type="text" name="name" id="name" placeholder="Wolfman Repairs" required autoComplete="name"
@@ -75,8 +75,8 @@ export default function ContactCard() {
                                 Send Message
                             </button>
                         </div>
-                        <div className="flex justify-center space-x-4">
-                            <svg className={(loading ? "visible" : "hidden") + " w-6 h-6 animate-spin"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1.587 1.587">
+                        <div className="flex justify-center gap-4">
+                            <svg className={(loading ? "inline" : "hidden") + " w-6 h-6 animate-spin"} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1.587 1.587">
                                 <g fill="none" strokeWidth=".349">
                                     <circle cx=".794" cy=".794" r=".619" stroke="#171717" />
                                     <path stroke="#0f0" d="M1.413.794a.62.62 0 0 1-.62.62" />

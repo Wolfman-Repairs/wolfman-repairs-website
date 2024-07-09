@@ -7,6 +7,7 @@ const links = [
     { name: 'Etsy', href: 'https://www.etsy.com/shop/WolfmanRepairs', target: '_blank' },
     { name: 'Videos', href: '#video' },
     { name: 'About', href: '#about' },
+    { name: 'Contact', href: '#contact' },
 ];
 
 export default function NavBar() {
@@ -25,7 +26,7 @@ export default function NavBar() {
                     />
                     <Link href="/" className="text-2xl font-semibold inline-block hover:text-gray-200">Wolfman Repairs</Link>
                 </div>
-                <div className="flex w-auto max-sm:hidden">
+                <div className="flex w-auto max-md:hidden">
                     <div className="text-lg flex-grow font-md">
                         {links.map((link) => {
                             return (
@@ -36,12 +37,12 @@ export default function NavBar() {
                         })}
                     </div>
                 </div>
-                <button onClick={toggleExpanded} type="button" className="sm:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm rounded-lg hover:bg-neutral-700">
+                <button onClick={toggleExpanded} type="button" className="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm rounded-lg hover:bg-neutral-700">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M4 18h16M4 12h16M4 6h16" />
                     </svg>
                 </button>
-                <div className={"sm:hidden text-2xl whitespace-pre-line text-center pt-4 w-full " + (expanded ? "" : "hidden")}>
+                <div className={"md:hidden text-2xl whitespace-pre-line text-center pt-4 w-full " + (expanded ? "" : "hidden")}>
                     <div className="flex flex-col font-semibold rounded-b-lg rounded-t-lg bg-neutral-800">
                         {links.map((link) => {
                             return (
