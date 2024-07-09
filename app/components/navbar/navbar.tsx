@@ -17,7 +17,7 @@ export default function NavBar() {
     return (
         <header className="sticky top-0 z-50 p-4 bg-neutral-900 w-full">
             <nav className="flex items-center justify-between flex-wrap min-h-[40px]">
-                <div className="flex items-center flex-grow text-white mr-6">
+                <div className="flex items-center flex-grow text-white">
                     <img
                         className="h-8 w-8 mr-2"
                         src="/wolfman-repairs-website/icon.svg"
