@@ -50,19 +50,19 @@ export default function ContactCard() {
                     <div className="flex flex-col space-y-4">
                         <div className="">
                             <label htmlFor="name" className="block mb-2 text-sm">Full Name</label>
-                            <input type="text" name="name" id="name" placeholder="Wolfman Repairs" required
+                            <input type="text" name="name" id="name" placeholder="Wolfman Repairs" required autoComplete="name"
                                 className="w-full p-2 border rounded-md bg-neutral-700 placeholder-green-500 placeholder-opacity-50 border-neutral-600 focus:outline-none focus:ring focus:ring-green-900 focus:border-green-800 focus:bg-neutral-900"
                             />
                         </div>
                         <div className="">
                             <label htmlFor="email" className="block mb-2 text-sm">Email Address</label>
-                            <input type="email" name="email" id="email" placeholder="you@wolfmanrepairs.com" required
+                            <input type="email" name="email" id="email" placeholder="you@wolfmanrepairs.com" required autoComplete="email"
                                 className="w-full p-2 border rounded-md bg-neutral-700 placeholder-green-500 placeholder-opacity-50 border-neutral-600 focus:outline-none focus:ring focus:ring-green-900 focus:border-green-800 focus:bg-neutral-900"
                             />
                         </div>
                         <div className="">
                             <label htmlFor="phone" className="text-sm">Phone Number</label>
-                            <input type="tel" name="phone" id="phone" placeholder="+1 (555) 123-4567"
+                            <input type="tel" name="phone" id="phone" placeholder="+1 (555) 123-4567" autoComplete="tel"
                                 className="w-full p-2 border rounded-md bg-neutral-700 placeholder-green-500 placeholder-opacity-50 border-neutral-600 focus:outline-none focus:ring focus:ring-green-900 focus:border-green-800 focus:bg-neutral-900"
                             />
                         </div>
