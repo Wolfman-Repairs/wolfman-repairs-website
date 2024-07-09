@@ -25,7 +25,7 @@ export default function Home() {
           <h2 className="sm:text-xl lg:text-3xl text-center mb-4">Check out the latest video</h2>
           <TV playlist={youTubePlaylist} />
         </section>
-        <section className="flex flex-col space-y-8 xl:flex-row xl:space-y-0 xl:space-x-8 scroll-mt-16 my-8" id="about">
+        <section className="flex flex-col gap-8 xl:flex-row scroll-mt-16 my-8" id="about">
           <ContentCard
             title="About Wolfman Repairs"
             image="/wolfman-repairs-website/nes-motherboard.png"
@@ -42,7 +42,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
           />
         </section>
         <section className="my-8">
-          <div className="flex flex-col space-y-8 lg:flex-row lg:space-y-0 lg:justify-evenly items-center lg:space-x-8 my-8">
+          <div className="flex flex-col gap-8 lg:flex-row lg:justify-evenly items-center my-8">
             <ShopCard
               title="eBay"
               image="/wolfman-repairs-website/controller.svg"
@@ -67,7 +67,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
           </div>
           <DonationCard />
         </section>
-        <section className="scroll-mt-16 my-8" id="contact">
+        <section className="scroll-mt-72 flex flex-col lg:flex-row gap-8 my-8" id="contact">
           <ContactCard />
         </section>
       </div>
