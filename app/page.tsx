@@ -74,7 +74,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
           <MailingCard
             title="Send Wolfman a package!"
             image="/wolfman-repairs-website/package.svg"
-            imageAlt="screwdriver"
+            imageAlt="package"
             text={`WOLFMAN REPAIRS
               11250 Old St. Augustine Rd
               Suite 15-205
