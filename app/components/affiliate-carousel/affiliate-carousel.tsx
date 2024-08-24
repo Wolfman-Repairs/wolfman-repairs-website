@@ -42,7 +42,6 @@ export default function AffiliateCarousel({ slides }: IProps) {
                 slideOffset = 0;
             }
             containerElement.scrollLeft = (slideRefs.current[index].offsetLeft - slideRefs.current[0].offsetLeft) - slideOffset;
-            // containerElement.scrollLeft = (containerElement.offsetWidth + paddingBetweenSlides) * index
         }
     }
 
@@ -64,33 +63,6 @@ export default function AffiliateCarousel({ slides }: IProps) {
             };
         }
     }, [isHovered, currentIndex]);
-
-    // const handleTouchStart = (e: TouchEvent) => {
-    //     setTouchEnd(null)
-    //     setTouchStart(e.targetTouches[0].clientX)
-    //     setIsHovered(true)
-    // }
-
-    // const handleTouchMove = (e: TouchEvent) => {
-    //     setTouchEnd(e.targetTouches[0].clientX)
-    // }
-
-    // const minSwipeDistance = 50
-    // const handleTouchEnd = () => {
-    //     setIsHovered(false)
-    //     if (!touchStart || !touchEnd) {
-    //         return
-    //     }
-    //     const distance = touchStart - touchEnd
-    //     const isLeftSwipe = distance > minSwipeDistance
-    //     const isRightSwipe = distance < -minSwipeDistance
-    //     if (isRightSwipe) {
-    //         previousSlide()
-    //     }
-    //     else if (isLeftSwipe) {
-    //         nextSlide()
-    //     }
-    // }
 
     const handleScroll = () => {
         if (containerRef.current && slideRefs.current[0]) {
@@ -132,31 +104,6 @@ export default function AffiliateCarousel({ slides }: IProps) {
                                 </div>
                             </a>
                         </div>
-                        // <div ref={element => { (slideRefs.current[index] = element) }}
-                        //     key={`slide-${index}`}
-                        //     className={"relative basis-[100%] sm:basis-1/2 shrink-0 aspect-[4/3] rounded-md overflow-hidden shadow-md shadow-black/50 bg-neutral-500 hover:bg-neutral-900 hover:scale-105 md:hover:scale-[1.02] transition-transform"}
-                        // >
-                        //     <img className="relative"
-                        //         src={slide.image}>
-                        //     </img>
-                        //     <a href={slide.url} target="_blank" className="absolute left-0 bottom-0 flex flex-row justify-between text-center items-center gap-2 p-4 w-full h-20 bg-neutral-900 bg-opacity-75">
-                        //         <div className="font-bold text-white text-left">{slide.title}</div>
-                        //         <svg className="w-8 grow-0 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#0f0" strokeWidth="4" viewBox="0 0 64 64">
-                        //             <path d="M55.4 32v21.58a1.81 1.81 0 0 1-1.82 1.82H10.42a1.81 1.81 0 0 1-1.82-1.82V10.42a1.81 1.81 0 0 1 1.82-1.82H32M40.32 8.6H55.4v15.58M19.32 45.72 54.61 8.91" />
-                        //         </svg>
-                        //     </a>
-                        // </div>
-                        // <div ref={element => { (slideRefs.current[index] = element) }}
-                        //     key={`slide-${index}`}
-                        //     className={"basis-[100%] sm:basis-1/2 shrink-0 aspect-[4/3] rounded-md overflow-hidden shadow-md shadow-black/50 bg-neutral-500 hover:bg-neutral-900 hover:scale-105 md:hover:scale-[1.02] transition-transform bg-no-repeat bg-center bg-cover bg-[image:var(--image-url)] bg-blend-multiply"}
-                        //     style={{ '--image-url': `url(${slide.image})` } as React.CSSProperties}>
-                        //     <a href={slide.url} target="_blank" className="flex flex-row justify-between text-center items-end gap-2 p-4 w-full h-full">
-                        //         <div className="font-bold text-white">{slide.title}</div>
-                        //         <svg className="w-8 grow-0 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#0f0" strokeWidth="4" viewBox="0 0 64 64">
-                        //             <path d="M55.4 32v21.58a1.81 1.81 0 0 1-1.82 1.82H10.42a1.81 1.81 0 0 1-1.82-1.82V10.42a1.81 1.81 0 0 1 1.82-1.82H32M40.32 8.6H55.4v15.58M19.32 45.72 54.61 8.91" />
-                        //         </svg>
-                        //     </a>
-                        // </div>
                     ))}
                 </div>
                 <div className="flex justify-center flex-wrap gap-2 mx-8 my-4">
@@ -185,14 +132,5 @@ export default function AffiliateCarousel({ slides }: IProps) {
                 <p className="text-neutral-400 group-hover:text-white">{'>'}</p>
             </button>
         </div>
-        // <div className={"grow w-52 max-w-72 aspect-square rounded-md overflow-hidden shadow-md shadow-black/50 bg-neutral-800 hover:bg-neutral-900 hover:scale-105 transition-transform bg-center bg-cover bg-[image:var(--image-url)] bg-blend-multiply"}
-        //     style={{ '--image-url': `url(${image})` } as React.CSSProperties}>
-        //     <a href={url} target="_blank" className="flex flex-row justify-between text-center items-center gap-2 p-4 w-full h-full">
-        //         <div className="font-bold text-white">{title}</div>
-        //         <svg className="w-8 grow-0 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#0f0" strokeWidth="4" viewBox="0 0 64 64">
-        //             <path d="M55.4 32v21.58a1.81 1.81 0 0 1-1.82 1.82H10.42a1.81 1.81 0 0 1-1.82-1.82V10.42a1.81 1.81 0 0 1 1.82-1.82H32M40.32 8.6H55.4v15.58M19.32 45.72 54.61 8.91" />
-        //         </svg>
-        //     </a>
-        // </div>
     );
 }
