@@ -83,13 +83,13 @@ export default function AffiliateCarousel({ slides }: IProps) {
             onTouchStart={handleMouseOver}
             onTouchEnd={handleMouseLeave}>
             <div className="relative flex flex-col justify-between w-full">
-                <div className="flex flex-row gap-4 overflow-y-hidden py-4 mx-8 overflow-x-scroll scroll-smooth"
+                <div className="flex flex-row gap-4 overflow-y-hidden py-4 mx-8 overflow-x-scroll scroll-smooth snap-proximity snap-x"
                     ref={containerRef}
                     onScroll={handleScroll}>
                     {slides.map((slide, index) => (
                         <div ref={element => { (slideRefs.current[index] = element) }}
                             key={`slide-${index}`}
-                            className={"basis-[100%] sm:basis-1/2 shrink-0 rounded-md overflow-hidden shadow-md shadow-black/50 bg-neutral-500 hover:bg-neutral-900 hover:scale-105 md:hover:scale-[1.02] transition-transform"}
+                            className={"basis-[100%] sm:basis-1/2 shrink-0 rounded-md overflow-hidden shadow-md shadow-black/50 bg-neutral-500 hover:bg-neutral-900 hover:scale-105 md:hover:scale-[1.02] transition-transform snap-center"}
                         >
                             <a href={slide.url} target="_blank" className="flex flex-col w-full">
                                 <img className="w-full"
