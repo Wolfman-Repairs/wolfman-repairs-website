@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer className="my-4 p-4 bg-neutral-900 w-full text-neutral-400">
+        <footer className="py-8 px-4 bg-neutral-900 w-full text-neutral-400">
             <hr className="mb-8 border-neutral-700" />
             <div className="flex items-center justify-between">
                 <span className="text-sm text-center ">© 2024 Wolfman Repairs™. All Rights Reserved.</span>
