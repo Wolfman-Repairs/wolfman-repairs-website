@@ -8,6 +8,7 @@ const links = [
     { name: 'Videos', href: '#video' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Tools', href: '#tools' },
 ];
 
 export default function NavBar() {

@@ -27,7 +27,7 @@ export default function RootLayout({
     <html className={font.className + " scroll-smooth"} lang="en">
       {/* TODO: Make attributions page for https://heropatterns.com/ */}
       <body className="flex text-white bg-green-900 bg-repeat bg-[url('/wolfman-repairs-website/circuit-board.svg')]">
-        <div className="md:container mx-auto bg-neutral-900 shadow-lg shadow-black">
+        <div className="container mx-auto shadow-lg shadow-black">
           <NavBar />
           {children}
           <Footer />
