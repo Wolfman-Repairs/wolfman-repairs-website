@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Wolfman Repairs",
   description: "Reviving Retro, One Console at a Time!!",
   openGraph: {
-    images: ["https://wolfman-repairs.github.io/wolfman-repairs-website/logo.png"],
+    images: ["https://wolfman-repairs.github.io/logo.png"],
   }
 };
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html className={font.className + " scroll-smooth"} lang="en">
       {/* TODO: Make attributions page for https://heropatterns.com/ */}
-      <body className="flex text-white bg-green-900 bg-repeat bg-[url('/wolfman-repairs-website/circuit-board.svg')]">
+      <body className="flex text-white bg-green-900 bg-repeat bg-[url('/circuit-board.svg')]">
         <div className="container mx-auto shadow-lg shadow-black">
           <NavBar />
           {children}

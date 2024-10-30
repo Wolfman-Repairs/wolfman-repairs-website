@@ -6,7 +6,7 @@ export default function DonationCard() {
             <button className="h-full w-full bg-neutral-800" type="submit">
                 <div className="flex">
                     <div className="bg-green-900">
-                        <img className="object-cover w-full h-full" src="/wolfman-repairs-website/circuit-board.svg" alt="circuit board" />
+                        <img className="object-cover w-full h-full" src="/circuit-board.svg" alt="circuit board" />
                     </div>
                     <div className="flex flex-col items-center bg-neutral-200 p-4">
                         <div className="text-left">

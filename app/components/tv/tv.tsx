@@ -10,7 +10,7 @@ interface IProps {
 }
 
 export default function TV({ playlist, offImage, offImageAlt }: IProps) {
-    const [play] = useSound("/wolfman-repairs-website/sounds/switch-click.wav");
+    const [play] = useSound("/sounds/switch-click.wav");
 
     const [powerClicked, setPowerClicked] = useState(true);
     const togglePowerClicked = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -35,7 +35,7 @@ export default function TV({ playlist, offImage, offImageAlt }: IProps) {
         <section className="relative">
             <img
                 className="object-contain w-full h-auto"
-                src="/wolfman-repairs-website/retro_tv.svg"
+                src="/retro_tv.svg"
                 alt="Wolfman Repairs Youtube TV Frame"
             />
             <div className="absolute top-[6%] left-[3.7%] w-[78.5%] border-2 md:border-4 border-solid border-black before:block before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 before:z-10 before:pointer-events-none before:bg-[size:100%_2px,3px_100%] before:bg-gradient-crt ">

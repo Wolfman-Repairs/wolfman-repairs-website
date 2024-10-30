@@ -20,26 +20,26 @@ export default function Home() {
       <div className="bg-neutral-900 flex-1 flex-col items-center justify-between">
         <div className="p-2 sm:p-4 md:p-8">
           <HeroBanner
-            image="/wolfman-repairs-website/logo.png"
+            image="/logo.png"
             imageAlt="Wolfman Repairs Logo"
             text="Reviving retro, one console at a time!"
           />
           <section className="my-8 scroll-mt-20" id="video">
             <h2 className="sm:text-xl lg:text-3xl text-center mb-4">Check out the latest video</h2>
             <TV playlist={youTubePlaylist}
-              offImage="/wolfman-repairs-website/logo.png"
+              offImage="/logo.png"
               offImageAlt="Wolfman Repairs Logo" />
           </section>
           <section className="flex flex-col gap-8 xl:flex-row scroll-mt-16 my-8" id="about">
             <ContentCard
               title="About Wolfman Repairs"
-              image="/wolfman-repairs-website/nes-motherboard.png"
+              image="/nes-motherboard.png"
               imageAlt="nes motherboard"
               text={`Welcome to Wolfman Repairs, where passion meets craftsmanship. Founded in late 2022, Wolfman Repairs was born out of a love for retro video games and a desire to breathe new life into classic consoles.`}
             />
             <ContentCard
               title="About Wolfman"
-              image="/wolfman-repairs-website/n64-chip.png"
+              image="/n64-chip.png"
               imageAlt="n64 chip"
               text={`The driving force behind Wolfman Repairs: the one-man show known simply as The Wolfman. With a passion for retro gaming and a knack for fixing things, the Wolfman is the heart and soul of our operation.
 
@@ -50,21 +50,21 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
             <div className="flex flex-col gap-8 lg:flex-row lg:justify-evenly items-center my-8">
               <ShopCard
                 title="eBay"
-                image="/wolfman-repairs-website/controller.svg"
+                image="/controller.svg"
                 imageAlt="game controller"
                 text=""
                 url="https://www.ebay.com/usr/wolfmanrepairs"
               />
               <ShopCard
                 title="Etsy"
-                image="/wolfman-repairs-website/shirt.svg"
+                image="/shirt.svg"
                 imageAlt="t-shirt"
                 text=""
                 url="https://www.etsy.com/shop/WolfmanRepairs"
               />
               {/* <ShopCard
               title="Patreon"
-              image="/wolfman-repairs-website/screwdriver.svg"
+              image="/screwdriver.svg"
               imageAlt="screwdriver"
               text=""
               url=""
@@ -75,7 +75,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
           <section className="scroll-mt-72 flex flex-col lg:flex-row gap-8 my-8" id="contact">
             <MailingCard
               title="Send Wolfman a package!"
-              image="/wolfman-repairs-website/package.svg"
+              image="/package.svg"
               imageAlt="package"
               text={`WOLFMAN REPAIRS
               11250 Old St. Augustine Rd
@@ -87,7 +87,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
         </div>
       </div>
       <div className="bg-transparent">
-        <div className="h-12 bg-repeat-x bg-[url('/wolfman-repairs-website/tooth.svg')]" />
+        <div className="h-12 bg-repeat-x bg-[url('/tooth.svg')]" />
         <section className="m-2 sm:m-4 md:m-8 scroll-mt-16 my-8" id="tools">
           <div className="text-center">
             <ContentCard
@@ -100,37 +100,37 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
               slides={[
                 {
                   title: "iFixit Moray Driver Kit",
-                  image: "/wolfman-repairs-website/toolbox/driver_kit.jpg",
+                  image: "/toolbox/driver_kit.jpg",
                   imageAlt: "iFixit Moray Driver Kit",
                   url: "https://amzn.to/4dPyPlr"
                 },
                 {
                   title: "Hakko-CHP-170 Micro Cutter",
-                  image: "/wolfman-repairs-website/toolbox/micro_cutter.jpg",
+                  image: "/toolbox/micro_cutter.jpg",
                   imageAlt: "Hakko-CHP-170 Micro Cutter",
                   url: "https://amzn.to/3XdsGJN"
                 },
                 {
                   title: "Anti-Static Stainless Steel Curved Tweezers",
-                  image: "/wolfman-repairs-website/toolbox/tweezers.jpg",
+                  image: "/toolbox/tweezers.jpg",
                   imageAlt: "Anti-Static Stainless Steel Curved Tweezers",
                   url: "https://amzn.to/4dUgbIB"
                 },
                 {
                   title: "Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper",
-                  image: "/wolfman-repairs-website/toolbox/wire_stripper.jpg",
+                  image: "/toolbox/wire_stripper.jpg",
                   imageAlt: "Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper",
                   url: "https://amzn.to/3XdsGJN"
                 },
                 {
                   title: "Andonstar AD407 Digital Microscope",
-                  image: "/wolfman-repairs-website/toolbox/microscope.jpg",
+                  image: "/toolbox/microscope.jpg",
                   imageAlt: "Andonstar AD407 Digital Microscope",
                   url: "https://amzn.to/40InzRb"
                 },
                 {
                   title: "Microscope 144 Led Ring Light",
-                  image: "/wolfman-repairs-website/toolbox/microscope.jpg",
+                  image: "/toolbox/microscope.jpg",
                   imageAlt: "Microscope 144 Led Ring Light",
                   url: "https://amzn.to/4dVFgmA"
                 }
@@ -138,7 +138,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
             />
           </div>
         </section>
-        <div className="h-12 -scale-y-100 bg-repeat-x bg-[left_72px_center] bg-[url('/wolfman-repairs-website/tooth.svg')]" />
+        <div className="h-12 -scale-y-100 bg-repeat-x bg-[left_72px_center] bg-[url('/tooth.svg')]" />
       </div>
 
     </main >

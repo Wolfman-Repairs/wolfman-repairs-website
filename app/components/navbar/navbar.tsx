@@ -22,7 +22,7 @@ export default function NavBar() {
                 <div className="flex items-center flex-grow text-white">
                     <img
                         className="h-8 w-8 mr-2"
-                        src="/wolfman-repairs-website/icon.svg"
+                        src="/icon.svg"
                         alt="Wolfman Repairs Icon"
                     />
                     <Link href="/" className="text-2xl font-semibold inline-block hover:text-gray-200">Wolfman Repairs</Link>
