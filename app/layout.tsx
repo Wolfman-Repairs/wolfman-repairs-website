@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Kode_Mono } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import NavBar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
-import HeroBanner from "./components/hero-banner/hero-banner";
 
 const font = Kode_Mono({
   subsets: ['latin'],
@@ -33,6 +33,7 @@ export default function RootLayout({
           <Footer />
         </div>
       </body>
+      <GoogleAnalytics gaId="G-0DEBVJY5S5" />
     </html>
   );
 }
