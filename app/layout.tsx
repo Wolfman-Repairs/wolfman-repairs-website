@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Wolfman Repairs",
   description: "Reviving Retro, One Console at a Time!!",
   openGraph: {
-    images: ["https://wolfman-repairs.github.io/logo.png"],
+    images: ["https://wolfmanrepairs.com/logo.png"],
   }
 };
 
