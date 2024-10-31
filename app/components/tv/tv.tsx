@@ -1,4 +1,6 @@
 "use client"
+
+import { sendGAEvent } from "@next/third-parties/google"
 import { useState } from "react"
 import { useSound } from 'use-sound'
 import VideoPlayer from "../video-player/video-player";
@@ -16,6 +18,7 @@ export default function TV({ playlist, offImage, offImageAlt }: IProps) {
     const togglePowerClicked = (e: React.ChangeEvent<HTMLInputElement>) => {
         play();
         setPowerClicked(e.target.checked);
+        sendGAEvent('event', 'click', { value: 'TV_Power', state: e.target.checked })
     }
 
     const fullRotationDegrees = 360;
@@ -29,6 +32,7 @@ export default function TV({ playlist, offImage, offImageAlt }: IProps) {
         var channelIndex = Math.floor(rotation % fullRotationDegrees / channelRotationDegrees);
         setPlaylistUrl(playlist[channelIndex]);
         setChannelChanged(rotation);
+        sendGAEvent('event', 'click', { value: 'TV_Channel', channel: channelIndex })
     }
 
     return (
