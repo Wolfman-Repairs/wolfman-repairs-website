@@ -25,7 +25,10 @@ export default function Home() {
             text="Reviving retro, one console at a time!"
           />
           <section className="my-8 scroll-mt-20" id="video">
-            <h2 className="sm:text-xl lg:text-3xl text-center mb-4">Check out the latest video</h2>
+            <div className="text-center">
+              <a href="#video" key="Videos"
+                className="sm:text-xl lg:text-3xl text-center mb-4">&darr; Check out the latest video &darr;</a>
+            </div>
             <TV playlist={youTubePlaylist}
               offImage="/logo.png"
               offImageAlt="Wolfman Repairs Logo" />
