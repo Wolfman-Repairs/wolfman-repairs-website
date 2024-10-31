@@ -101,37 +101,37 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
                 {
                   title: "iFixit Moray Driver Kit",
                   image: "/toolbox/driver_kit.jpg",
-                  imageAlt: "iFixit Moray Driver Kit",
+                  imageAlt: "Photo of Driver Kit",
                   url: "https://amzn.to/4dPyPlr"
                 },
                 {
                   title: "Hakko-CHP-170 Micro Cutter",
                   image: "/toolbox/micro_cutter.jpg",
-                  imageAlt: "Hakko-CHP-170 Micro Cutter",
+                  imageAlt: "Photo of Micro Cutter",
                   url: "https://amzn.to/3XdsGJN"
                 },
                 {
                   title: "Anti-Static Stainless Steel Curved Tweezers",
                   image: "/toolbox/tweezers.jpg",
-                  imageAlt: "Anti-Static Stainless Steel Curved Tweezers",
+                  imageAlt: "Photo of Stainless Steel Curved Tweezers",
                   url: "https://amzn.to/4dUgbIB"
                 },
                 {
                   title: "Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper",
                   image: "/toolbox/wire_stripper.jpg",
-                  imageAlt: "Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper",
+                  imageAlt: "Photo of Precision Wire Stripper",
                   url: "https://amzn.to/3XdsGJN"
                 },
                 {
                   title: "Andonstar AD407 Digital Microscope",
                   image: "/toolbox/microscope.jpg",
-                  imageAlt: "Andonstar AD407 Digital Microscope",
+                  imageAlt: "Photo of Digital Microscope",
                   url: "https://amzn.to/40InzRb"
                 },
                 {
                   title: "Microscope 144 Led Ring Light",
                   image: "/toolbox/microscope.jpg",
-                  imageAlt: "Microscope 144 Led Ring Light",
+                  imageAlt: "Photo of Led Ring Light",
                   url: "https://amzn.to/4dVFgmA"
                 }
               ]}
