@@ -115,6 +115,7 @@ export default function AffiliateCarousel({ slides }: IProps) {
                                 ? "bg-green-500 rounded-full"
                                 : "bg-neutral-900 rounded-full"
                                 } transition-all duration-300 ease-in-out`}
+                            aria-label={`View tool number ${index}`}
                         ></button>
                     ))}
                 </div>

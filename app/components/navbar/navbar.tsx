@@ -38,7 +38,9 @@ export default function NavBar() {
                         })}
                     </div>
                 </div>
-                <button onClick={toggleExpanded} type="button" className="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm rounded-lg hover:bg-neutral-700">
+                <button onClick={toggleExpanded} type="button"
+                    aria-label="Open link menu"
+                    className="md:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm rounded-lg hover:bg-neutral-700">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="M4 18h16M4 12h16M4 6h16" />
                     </svg>

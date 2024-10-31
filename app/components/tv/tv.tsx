@@ -51,6 +51,7 @@ export default function TV({ playlist, offImage, offImageAlt }: IProps) {
             <div className="absolute top-[9.9%] left-[87.1%] w-[7.8%] h-[14%]">
                 <div className="relative cursor-pointer w-full h-full rounded-full">
                     <button className="appearance-none absolute z-10 w-full h-full opacity-0 cursor-pointer"
+                        aria-label="Change YouTube video"
                         onClick={channelChanged} />
                     <div className="relative w-full h-full transition-transform"
                         style={{ transform: `rotate(${channelRotation}deg)` }}>
@@ -64,7 +65,8 @@ export default function TV({ playlist, offImage, offImageAlt }: IProps) {
             <div className="absolute top-[52.5%] left-[87.1%] w-[7.8%] h-[32%]">
                 <div className="relative overflow-hidden cursor-pointer w-full h-full border-2 md:border-4 border-solid border-black">
                     <input className="appearance-none absolute z-10 w-full h-full opacity-0 cursor-pointer"
-                        type="checkbox" checked={powerClicked} onChange={togglePowerClicked} />
+                        type="checkbox" checked={powerClicked} onChange={togglePowerClicked}
+                        aria-label="Toggle YouTube video on/fff" />
                     <div className={"w-full h-full py-1 inline-flex transition-colors shadow-[inset_0_0_0.5em_rgba(0,0,0,0.6)] " + (powerClicked ? "bg-red-500" : "bg-neutral-600")}>
                         <div className={"w-full h-full flex flex-col justify-evenly relative items-center sm:rounded-md transition-transform bg-gradient-to-b from-[49%] to-[51%] border-y border-neutral-800 border-opacity-10 " + (powerClicked ? "-translate-y-[10%]  from-neutral-700  to-neutral-500" : "translate-y-[10%] from-neutral-500 to-neutral-700")}>
                             <svg className="w-[70%] h-[70%]" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
