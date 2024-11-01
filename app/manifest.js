@@ -1,6 +1,8 @@
-import type { MetadataRoute } from 'next'
+// import type { MetadataRoute } from 'next'
 
-export default function manifest(): MetadataRoute.Manifest {
+// export default function manifest(): MetadataRoute.Manifest {
+//   return {
+export default function manifest() {
   return {
     name: 'Wolfman Repairs',
     short_name: 'Wolfman Repairs',
