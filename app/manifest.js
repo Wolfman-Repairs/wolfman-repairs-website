@@ -21,14 +21,32 @@ export default function manifest() {
         type: 'image/png',
       },
       {
+        src: '/icons/icon-180x180-maskable.png',
+        sizes: '180x180',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
         src: '/icons/icon-192x192.png',
         sizes: '192x192',
         type: 'image/png',
       },
       {
+        src: '/icons/icon-192x192-maskable.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'maskable',
+      },
+      {
         src: '/icons/icon-512x512.png',
         sizes: '512x512',
         type: 'image/png',
+      },
+      {
+        src: '/icons/icon-512x512-maskable.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'maskable',
       },
     ],
     screenshots: [
