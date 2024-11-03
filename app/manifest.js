@@ -27,6 +27,12 @@ export default function manifest() {
         purpose: 'maskable',
       },
       {
+        src: '/icons/icon-180x180-monochrome.png',
+        sizes: '180x180',
+        type: 'image/png',
+        purpose: 'monochrome',
+      },
+      {
         src: '/icons/icon-192x192.png',
         sizes: '192x192',
         type: 'image/png',
@@ -38,6 +44,12 @@ export default function manifest() {
         purpose: 'maskable',
       },
       {
+        src: '/icons/icon-192x192-monochrome.png',
+        sizes: '192x192',
+        type: 'image/png',
+        purpose: 'monochrome',
+      },
+      {
         src: '/icons/icon-512x512.png',
         sizes: '512x512',
         type: 'image/png',
@@ -47,6 +59,12 @@ export default function manifest() {
         sizes: '512x512',
         type: 'image/png',
         purpose: 'maskable',
+      },
+      {
+        src: '/icons/icon-512x512-monochrome.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'monochrome',
       },
     ],
     screenshots: [
