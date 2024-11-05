@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Kode_Mono } from "next/font/google";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
-import NavBar from "./components/navbar/navbar";
-import Footer from "./components/footer/footer";
+import NavBar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
 
 const font = Kode_Mono({
   subsets: ['latin'],

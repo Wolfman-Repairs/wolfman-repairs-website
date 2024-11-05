@@ -1,11 +1,11 @@
-import ContentCard from "./components/content-card/content-card";
-import DonationCard from "./components/donation-card/donation-card";
-import ShopCard from "./components/shop-card/shop-card";
-import HeroBanner from "./components/hero-banner/hero-banner";
-import TV from "./components/tv/tv";
-import ContactCard from "./components/contact-card/contact-card";
-import MailingCard from "./components/mailing-card/mailing-card";
-import AffiliateCarousel from "./components/affiliate-carousel/affiliate-carousel";
+import ContentCard from "@/components/content-card/content-card";
+import DonationCard from "@/components/donation-card/donation-card";
+import ShopCard from "@/components/shop-card/shop-card";
+import HeroBanner from "@/components/hero-banner/hero-banner";
+import TV from "@/components/tv/tv";
+import ContactCard from "@/components/contact-card/contact-card";
+import MailingCard from "@/components/mailing-card/mailing-card";
+import AffiliateCarousel from "@/components/affiliate-carousel/affiliate-carousel";
 
 export default function Home() {
   const youTubeBaseUrl = "https://www.youtube-nocookie.com/embed?listType=playlist&list="

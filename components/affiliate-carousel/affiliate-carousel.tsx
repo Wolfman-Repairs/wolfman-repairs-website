@@ -1,5 +1,6 @@
 "use client";
-import { useIsVisible } from "@/app/hooks/useIsVisible";
+
+import { useIsVisible } from "@/hooks/useIsVisible";
 import { useState, useEffect, useRef } from "react";
 
 interface IProps {
