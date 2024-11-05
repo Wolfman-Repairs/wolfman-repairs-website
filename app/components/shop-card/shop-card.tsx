@@ -22,7 +22,7 @@ export default function ShopCard({ title, image, imageAlt, text, url }: IProps) 
                         <div className="text-base">{text}</div>
                     </div>
                 </div>
-                <img className="object-contain max-h-28 mr-8" src={image} alt={imageAlt} />
+                <img className="object-contain max-h-28 mr-8 visible lg:invisible xl:visible" src={image} alt={imageAlt} />
             </a>
         </div>
     );
