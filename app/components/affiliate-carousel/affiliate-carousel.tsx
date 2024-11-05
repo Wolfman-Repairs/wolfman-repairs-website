@@ -1,4 +1,5 @@
 "use client";
+import { useIsVisible } from "@/app/hooks/useIsVisible";
 import { useState, useEffect, useRef } from "react";
 
 interface IProps {
@@ -15,6 +16,7 @@ export default function AffiliateCarousel({ slides }: IProps) {
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const containerRef = useRef(null);
     const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
+    const isVisible = useIsVisible(containerRef);
     const paddingBetweenSlides = 16;
 
     const previousSlide = (): void => {
@@ -55,14 +57,16 @@ export default function AffiliateCarousel({ slides }: IProps) {
     useEffect(() => {
         if (!isHovered) {
             const interval = setInterval(() => {
-                nextSlide();
+                if (isVisible) {
+                    nextSlide();
+                }
             }, 3000);
 
             return () => {
                 clearInterval(interval);
             };
         }
-    }, [isHovered, currentIndex]);
+    }, [isHovered, isVisible, currentIndex]);
 
     const handleScroll = () => {
         if (containerRef.current && slideRefs.current[0]) {
@@ -83,7 +87,7 @@ export default function AffiliateCarousel({ slides }: IProps) {
             onTouchStart={handleMouseOver}
             onTouchEnd={handleMouseLeave}>
             <div className="relative flex flex-col justify-between w-full">
-                <div className="flex flex-row gap-4 overflow-y-hidden py-4 mx-8 overflow-x-scroll scroll-smooth snap-proximity snap-x"
+                <div className="flex flex-row gap-4 overflow-y-hidden py-4 mx-8 overflow-x-scroll scroll-smooth snap-mandatory snap-x"
                     ref={containerRef}
                     onScroll={handleScroll}>
                     {slides.map((slide, index) => (
