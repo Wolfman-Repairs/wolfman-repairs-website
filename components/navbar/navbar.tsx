@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useState } from "react";
 
 const links = [
-    { name: 'eBay', href: 'https://www.ebay.com/usr/wolfmanrepairs', target: '_blank' },
-    { name: 'Etsy', href: 'https://www.etsy.com/shop/WolfmanRepairs', target: '_blank' },
+    { name: 'eBay', href: 'https://www.ebay.com/usr/wolfmanrepairs', target: '_blank', rel: 'noopener' },
+    { name: 'Etsy', href: 'https://www.etsy.com/shop/WolfmanRepairs', target: '_blank', rel: 'noopener' },
     { name: 'Videos', href: '#video' },
     { name: 'About', href: '#about' },
     { name: 'Contact', href: '#contact' },
@@ -32,7 +32,7 @@ export default function NavBar() {
                         {links.map((link) => {
                             return (
                                 /* TODO: Set this as a Link after changing base path to "" */
-                                <a href={link.href} key={link.name} target={link.target}
+                                <a href={link.href} key={link.name} target={link.target} rel={link.rel}
                                     className="inline-block p-1 rounded-md text-gray-200 hover:text-white hover:bg-neutral-700 ml-2">{link.name}</a>
                             );
                         })}

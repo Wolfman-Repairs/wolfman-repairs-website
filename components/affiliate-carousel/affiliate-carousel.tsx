@@ -96,7 +96,7 @@ export default function AffiliateCarousel({ slides }: IProps) {
                             key={`slide-${index}`}
                             className={"basis-[100%] sm:basis-1/2 shrink-0 rounded-md overflow-hidden shadow-md shadow-black/50 bg-neutral-500 hover:bg-neutral-900 hover:scale-105 md:hover:scale-[1.02] transition-transform snap-center"}
                         >
-                            <a href={slide.url} target="_blank" className="flex flex-col w-full">
+                            <a href={slide.url} target="_blank" rel="noopener" className="flex flex-col w-full">
                                 <img className="w-full"
                                     src={slide.image}
                                     alt={slide.imageAlt}
