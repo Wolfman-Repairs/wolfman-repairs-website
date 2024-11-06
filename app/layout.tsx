@@ -13,9 +13,13 @@ const font = Kode_Mono({
 export const metadata: Metadata = {
   title: "Wolfman Repairs",
   description: "Reviving Retro, One Console at a Time!!",
+  metadataBase: new URL('https://wolfmanrepairs.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    images: ["https://wolfmanrepairs.com/logo.png"],
-  }
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
