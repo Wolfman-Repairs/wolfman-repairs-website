@@ -123,7 +123,7 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
                   title: "Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper",
                   image: "/toolbox/wire_stripper.jpg",
                   imageAlt: "Photo of Precision Wire Stripper",
-                  url: "https://amzn.to/3XdsGJN"
+                  url: "https://amzn.to/3zBlnPi"
                 },
                 {
                   title: "Andonstar AD407 Digital Microscope",
