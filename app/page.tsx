@@ -21,7 +21,7 @@ export default function Home() {
         <div className="p-2 sm:p-4 md:p-8">
           <HeroBanner
             image="/icons/logo.webp"
-            imageAlt="Wolfman Repairs Logo"
+            imageAlt="Wolfman Repairs"
             text="Reviving retro, one console at a time!"
           />
           <section className="my-8 scroll-mt-20" id="video">
