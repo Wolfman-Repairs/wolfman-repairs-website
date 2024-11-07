@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: ["/logo.png"],
   },
+  keywords: ['Wolfman', 'Repairs', 'Retro', 'Console', 'Games', 'Videos', 'Tools'],
 };
 
 export default function RootLayout({
