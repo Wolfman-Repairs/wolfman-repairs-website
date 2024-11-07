@@ -20,7 +20,7 @@ export default function Home() {
       <div className="bg-neutral-900 flex-1 flex-col items-center justify-between">
         <div className="p-2 sm:p-4 md:p-8">
           <HeroBanner
-            image="/logo.png"
+            image="/icons/logo.webp"
             imageAlt="Wolfman Repairs Logo"
             text="Reviving retro, one console at a time!"
           />
@@ -30,19 +30,19 @@ export default function Home() {
                 className="sm:text-xl lg:text-3xl text-center mb-4">&darr; Check out the latest video &darr;</a>
             </div>
             <TV playlist={youTubePlaylist}
-              offImage="/logo.png"
+              offImage="/icons/logo.webp"
               offImageAlt="Wolfman Repairs Logo" />
           </section>
           <section className="flex flex-col gap-8 xl:flex-row scroll-mt-16 my-8" id="about">
             <ContentCard
               title="About Wolfman Repairs"
-              image="/nes-motherboard.png"
+              image="/nes-motherboard.webp"
               imageAlt="nes motherboard"
               text={`Welcome to Wolfman Repairs, where passion meets craftsmanship. Founded in late 2022, Wolfman Repairs was born out of a love for retro video games and a desire to breathe new life into classic consoles.`}
             />
             <ContentCard
               title="About Wolfman"
-              image="/n64-chip.png"
+              image="/n64-chip.webp"
               imageAlt="n64 chip"
               text={`The driving force behind Wolfman Repairs: the one-man show known simply as The Wolfman. With a passion for retro gaming and a knack for fixing things, the Wolfman is the heart and soul of our operation.
 
@@ -103,37 +103,37 @@ Armed with years of experience and an insatiable curiosity, the Wolfman dives he
               slides={[
                 {
                   title: "iFixit Moray Driver Kit",
-                  image: "/toolbox/driver_kit.jpg",
+                  image: "/toolbox/driver_kit.webp",
                   imageAlt: "Photo of Driver Kit",
                   url: "https://amzn.to/4dPyPlr"
                 },
                 {
                   title: "Hakko-CHP-170 Micro Cutter",
-                  image: "/toolbox/micro_cutter.jpg",
+                  image: "/toolbox/micro_cutter.webp",
                   imageAlt: "Photo of Micro Cutter",
                   url: "https://amzn.to/3XdsGJN"
                 },
                 {
                   title: "Anti-Static Stainless Steel Curved Tweezers",
-                  image: "/toolbox/tweezers.jpg",
+                  image: "/toolbox/tweezers.webp",
                   imageAlt: "Photo of Stainless Steel Curved Tweezers",
                   url: "https://amzn.to/4dUgbIB"
                 },
                 {
                   title: "Eclipse Tools CP-301G Pro'sKit Precision Wire Stripper",
-                  image: "/toolbox/wire_stripper.jpg",
+                  image: "/toolbox/wire_stripper.webp",
                   imageAlt: "Photo of Precision Wire Stripper",
                   url: "https://amzn.to/3zBlnPi"
                 },
                 {
                   title: "Andonstar AD407 Digital Microscope",
-                  image: "/toolbox/microscope.jpg",
+                  image: "/toolbox/microscope.webp",
                   imageAlt: "Photo of Digital Microscope",
                   url: "https://amzn.to/40InzRb"
                 },
                 {
                   title: "Microscope 144 Led Ring Light",
-                  image: "/toolbox/microscope.jpg",
+                  image: "/toolbox/microscope.webp",
                   imageAlt: "Photo of Led Ring Light",
                   url: "https://amzn.to/4dVFgmA"
                 }

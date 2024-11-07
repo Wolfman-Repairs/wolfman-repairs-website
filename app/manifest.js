@@ -69,7 +69,7 @@ export default function manifest() {
     ],
     screenshots: [
       {
-        src: '/icons/logo-2500x1100.png',
+        src: '/icons/logo-2500x1100.webp',
         sizes: '2500x1100',
         type: 'image/png',
         form_factor: 'wide',

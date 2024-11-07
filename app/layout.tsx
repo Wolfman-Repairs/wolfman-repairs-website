@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    images: ["/logo.png"],
+    images: ["/icons/logo.webp"],
   },
   keywords: ['Wolfman', 'Repairs', 'Retro', 'Console', 'Games', 'Videos', 'Tools'],
 };
