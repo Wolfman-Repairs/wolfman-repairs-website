@@ -100,6 +100,7 @@ export default function AffiliateCarousel({ slides }: IProps) {
                                 <img className="w-full"
                                     src={slide.image}
                                     alt={slide.imageAlt}
+                                    loading="lazy"
                                 />
                                 <div className="flex flex-row justify-between text-center items-center gap-2 p-4 h-20 bg-neutral-900">
                                     <div className="font-bold text-white text-left">{slide.title}</div>
